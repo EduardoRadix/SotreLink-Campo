@@ -1,0 +1,8 @@
+[caps]
+udid = "192.168.2.87:5555"
+deviceName = "S8 Plus"
+platformName = "Android"
+appPackage = "com.sotreqlinkcampoapp"
+appActivity = "com.sotreqlinkcampoapp.MainActivity"
+unicodeKeyboard = true
+resetKeyboard = true
