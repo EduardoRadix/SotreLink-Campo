@@ -1,0 +1,99 @@
+[
+  {
+    "id": "login",
+    "uri": "features/specs/os_avulsa.feature",
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "login;criar-uma-os-avulsa-aleatória;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Criar uma OS avulsa aleatória",
+        "description": "",
+        "line": 15,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja logado no app",
+            "line": 7,
+            "rows": [
+              {
+                "cells": [
+                  "matricula",
+                  "1042845"
+                ]
+              },
+              {
+                "cells": [
+                  "senha",
+                  "abc123"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/steps/os_avulsa.rb:2"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "preencho os campos da os avulsa 'baixa'",
+            "line": 10,
+            "match": {
+              "location": "features/steps/os_avulsa.rb:10"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo criar uma os avulsa com sucesso",
+            "line": 11,
+            "match": {
+              "location": "features/steps/os_avulsa.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Os_avulsa",
+            "line": 5
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "exit (SystemExit)\n./features/support/hooks.rb:6:in `Before'",
+              "duration": 542189256600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:13"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `screenshot_as' for nil:NilClass\n\n  binary_shot = driver.screenshot_as(:base64)\r\n                      ^^^^^^^^^^^^^^\nDid you mean?  screenshot (NoMethodError)\n./features/support/hooks.rb:15:in `After'",
+              "duration": 103300
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

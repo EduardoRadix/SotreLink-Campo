@@ -1,5 +1,3 @@
-require "allure-cucumber"
-require "appium_lib"
 require "fileutils"
 require "cpf_cnpj"
 require "faker"
@@ -7,6 +5,9 @@ require_relative "modules"
 require "appium_lib"
 require "appium_console"
 require "pry"
+# Limpa os logs e os screenshots
+FileUtils.rm_f(Dir.glob("logs/*.json"))
+FileUtils.rm_f(Dir.glob("logs/*.png"))
 
 #declara a variavel Device
 DEVICE = ENV["DEVICE_TYPE"]
